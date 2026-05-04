@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rajdeep Mandal — Portfolio</title>
+  <meta name="description"
+    content="Rajdeep Mandal — CSE Student & Aspiring Software Developer at Haldia Institute of Technology. Building real-world software with Python, Flask, Java and IoT." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Rajdeep Mandal — Portfolio" />
+  <meta property="og:description"
+    content="CSE Student building real-world software with Python, Flask, Java and IoT. Check out TRINETRA, Attendance Tracker and more." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://linkedin.com/in/rajdeepmandal5019" />
+  <meta property="og:image" content="https://via.placeholder.com/1200x630/04060D/00C6FF?text=Rajdeep+Mandal" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rajdeep Mandal — Portfolio" />
+  <meta name="twitter:description" content="CSE Student | Builder | Problem Solver" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+</head>
+
+<body>
+
+  <!-- LOADING SCREEN -->
+  <div class="loader" id="loader">
+    <div class="loader-logo">RM<span class="dot">.</span></div>
+    <div class="loader-bar">
+      <div class="loader-fill" id="loaderFill"></div>
+    </div>
+  </div>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- SCROLL DOTS NAV -->
+  <nav class="scroll-dots" id="scrollDots" aria-label="Section navigation">
+    <a href="#hero" class="sd" data-label="Home"></a>
+    <a href="#about" class="sd" data-label="About"></a>
+    <a href="#projects" class="sd" data-label="Projects"></a>
+    <a href="#skills" class="sd" data-label="Skills"></a>
+    <a href="#education" class="sd" data-label="Education"></a>
+    <a href="#achievements" class="sd" data-label="Achievements"></a>
+    <a href="#contact" class="sd" data-label="Contact"></a>
+  </nav>
+
+  <!-- BACK TO TOP -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- NAV -->
+  <nav id="navbar">
+    <div class="nav-logo">RM<span class="dot">.</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero" class="scene">
+    <canvas id="particleCanvas"></canvas>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <div class="hero-grid">
+
+      <!-- LEFT: Text -->
+      <div class="hero-content">
+        <div class="hero-badge reveal-up">✦ Open to Internships</div>
+        <h1 class="hero-name reveal-up">
+          <span class="line">Rajdeep</span>
+          <span class="line accent-gradient">Mandal</span>
+        </h1>
+        <div class="hero-role reveal-up">
+          <span>CSE Student</span>
+          <span class="sep">✦</span>
+          <span id="typewriter"></span><span class="caret">|</span>
+        </div>
+        <p class="hero-desc reveal-up">I craft software that solves real problems — one line of code at a time.</p>
+        <div class="hero-cta reveal-up">
+          <a href="#projects" class="btn btn-primary magnetic" id="ctaWork">View My Work</a>
+          <a href="#contact" class="btn btn-ghost magnetic" id="ctaTalk">Let's Talk</a>
+          <a href="resume.pdf" download class="btn btn-resume magnetic" id="ctaResume">↓ Resume</a>
+        </div>
+        <!-- Currently Working On -->
+        <div class="currently-box reveal-up">
+          <span class="now-dot"></span>
+          <span class="now-label">NOW</span>
+          <span class="now-text">Building Attendance Tracker v2 · Mastering DSA in Java · Exploring IoT with
+            ESP32</span>
+        </div>
+      </div>
+
+      <!-- RIGHT: Profile Card -->
+      <div class="hero-visual reveal-right">
+        <div class="profile-card">
+          <div class="profile-avatar">RM</div>
+          <div class="profile-info">
+            <div class="profile-name">Rajdeep Mandal</div>
+            <div class="profile-role">CSE @ Haldia Institute of Tech</div>
+            <div class="profile-location">📍 Kolkata, West Bengal</div>
+          </div>
+          <div class="profile-divider"></div>
+          <div class="profile-stats">
+            <div class="ps-item">
+              <span class="ps-num">4+</span>
+              <span class="ps-label">Projects</span>
+            </div>
+            <div class="ps-sep"></div>
+            <div class="ps-item">
+              <span class="ps-num">2+</span>
+              <span class="ps-label">Yrs Coding</span>
+            </div>
+            <div class="ps-sep"></div>
+            <div class="ps-item">
+              <span class="ps-num">3</span>
+              <span class="ps-label">Domains</span>
+            </div>
+          </div>
+          <div class="profile-divider"></div>
+          <div class="profile-tech">
+            <span class="pt">Python</span>
+            <span class="pt">Flask</span>
+            <span class="pt">Java</span>
+            <span class="pt">ESP32</span>
+            <span class="pt">SQL</span>
+            <span class="pt">IoT</span>
+          </div>
+        </div>
+
+        <!-- Floating badges -->
+        <div class="hf-badge hf-1">🤖 TRINETRA — IoT Robot</div>
+        <div class="hf-badge hf-2">🪖 NCC Cadet</div>
+        <div class="hf-badge hf-3">🏫 Sainik School</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TECH MARQUEE -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span>Python</span><span class="sep-m">✦</span>
+        <span>Java</span><span class="sep-m">✦</span>
+        <span>Flask</span><span class="sep-m">✦</span>
+        <span>ESP32</span><span class="sep-m">✦</span>
+        <span>SQLite</span><span class="sep-m">✦</span>
+        <span>IoT</span><span class="sep-m">✦</span>
+        <span>Git</span><span class="sep-m">✦</span>
+        <span>HTML / CSS</span><span class="sep-m">✦</span>
+        <span>JavaScript</span><span class="sep-m">✦</span>
+        <span>Scikit-learn</span><span class="sep-m">✦</span>
+        <span>Pandas</span><span class="sep-m">✦</span>
+        <span>NumPy</span><span class="sep-m">✦</span>
+        <span>C</span><span class="sep-m">✦</span>
+        <span>Linux</span><span class="sep-m">✦</span>
+        <span>REST APIs</span><span class="sep-m">✦</span>
+        <!-- duplicate for seamless loop -->
+        <span>Python</span><span class="sep-m">✦</span>
+        <span>Java</span><span class="sep-m">✦</span>
+        <span>Flask</span><span class="sep-m">✦</span>
+        <span>ESP32</span><span class="sep-m">✦</span>
+        <span>SQLite</span><span class="sep-m">✦</span>
+        <span>IoT</span><span class="sep-m">✦</span>
+        <span>Git</span><span class="sep-m">✦</span>
+        <span>HTML / CSS</span><span class="sep-m">✦</span>
+        <span>JavaScript</span><span class="sep-m">✦</span>
+        <span>Scikit-learn</span><span class="sep-m">✦</span>
+        <span>Pandas</span><span class="sep-m">✦</span>
+        <span>NumPy</span><span class="sep-m">✦</span>
+        <span>C</span><span class="sep-m">✦</span>
+        <span>Linux</span><span class="sep-m">✦</span>
+        <span>REST APIs</span><span class="sep-m">✦</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section id="about" class="scene">
+    <div class="about-grid">
+      <div class="about-left">
+        <div class="scene-label reveal-left">// about me</div>
+        <h2 class="scene-title reveal-left">Turning <span class="accent-gradient">Ideas</span><br>Into Software</h2>
+        <p class="about-text reveal-left">I'm a CSE student at <strong>Haldia Institute of Technology</strong>, Kolkata,
+          passionate about building software that solves real problems. My focus is on mastering core programming
+          concepts while shipping real projects — not just doing tutorials.</p>
+        <p class="about-text reveal-left">Currently deep into <strong>Java</strong>, <strong>Data Structures</strong>,
+          and <strong>Web Development</strong>, while exploring APIs, backend systems, and IoT. Also an NCC cadet with a
+          strong belief in discipline and teamwork.</p>
+        <div class="about-stats reveal-left">
+          <div class="stat"><span class="stat-num counter" data-target="4">0</span><span class="stat-plus">+</span><span
+              class="stat-label">Projects Built</span></div>
+          <div class="stat"><span class="stat-num counter" data-target="2">0</span><span class="stat-plus">+</span><span
+              class="stat-label">Years Coding</span></div>
+          <div class="stat"><span class="stat-num">∞</span><span class="stat-label">Things to Learn</span></div>
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="code-window reveal-right">
+          <div class="code-titlebar">
+            <span class="dot-r"></span><span class="dot-y"></span><span class="dot-g"></span>
+            <span class="code-file">about.py</span>
+          </div>
+          <pre class="code-body"><code><span class="ck">class</span> <span class="cc">Rajdeep</span>:
+  name     = <span class="cs">"Rajdeep Mandal"</span>
+  college  = <span class="cs">"Haldia Institute of Tech"</span>
+  location = <span class="cs">"Kolkata, WB, India"</span>
+  role     = <span class="cs">"CSE Student"</span>
+  goal     = <span class="cs">"Software Developer"</span>
+  stack    = [
+    <span class="cs">"Python"</span>, <span class="cs">"Java"</span>,
+    <span class="cs">"Flask"</span>, <span class="cs">"SQL"</span>
+  ]
+
+  <span class="ck">def</span> <span class="cf">motto</span>(self):
+    <span class="ck">return</span> <span class="cs">"Build. Learn. Repeat."</span></code></pre>
+        </div>
+        <div class="float-tag ft1 reveal-right">🔥 Open Source</div>
+        <div class="float-tag ft2 reveal-right">🚀 Backend Dev</div>
+        <div class="float-tag ft3 reveal-right">💡 Problem Solver</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="scene scene-center">
+    <div class="section-header reveal-up">
+      <div class="scene-label">// my work</div>
+      <h2 class="scene-title">Featured <span class="accent-gradient">Projects</span></h2>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card tilt-card reveal-up" style="--d:0s">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="proj-num">01</div>
+            <div class="proj-emoji">🤖</div>
+            <h3>Project TRINETRA</h3>
+            <p>Semi-autonomous IoT surveillance robot for remote &amp; disaster environments. Built with Team SYNAPSES.
+            </p>
+            <div class="proj-tags">
+              <span>ESP32</span><span>IoT</span><span>Robotics</span><span>AI</span><span>SLAM</span>
+            </div>
+          </div>
+          <div class="card-back">
+            <h3>Project TRINETRA</h3>
+            <ul>
+              <li>Autonomous indoor navigation via sensor fusion</li>
+              <li>Real-time AI anomaly detection onboard</li>
+              <li>IoT remote monitoring &amp; data transmission</li>
+              <li>Search &amp; rescue support in low-network zones</li>
+            </ul>
+            <a href="https://www.linkedin.com/posts/rajdeepmandal5019_iot-robotics-surveillancetech-ugcPost-7325932446552653824-XlW2"
+              target="_blank" class="btn btn-sm">LinkedIn →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card tilt-card featured-card reveal-up" style="--d:0.1s">
+        <div class="featured-pill">⭐ Featured</div>
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="proj-num">02</div>
+            <div class="proj-emoji">📊</div>
+            <h3>Attendance Tracker</h3>
+            <p>Full-stack web app for student attendance management with analytics.</p>
+            <div class="proj-tags"><span>Python</span><span>Flask</span><span>SQLite</span><span>CSS</span></div>
+          </div>
+          <div class="card-back">
+            <h3>Attendance Tracker</h3>
+            <ul>
+              <li>User auth with session management</li>
+              <li>Subject-wise attendance tracking</li>
+              <li>Visual analytics and attendance warnings</li>
+              <li>Glassmorphism UI design</li>
+            </ul>
+            <a href="https://github.com/Rajdeep5019" target="_blank" class="btn btn-sm">GitHub →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card tilt-card reveal-up" style="--d:0.2s">
+        <div class="card-inner">
+          <div class="card-front">
+            <div class="proj-num">03</div>
+            <div class="proj-emoji">🏥</div>
+            <h3>Doctor Clinic Site</h3>
+            <p>Professional clinic website with appointment booking and SQLite backend.</p>
+            <div class="proj-tags"><span>Flask</span><span>SQLite</span><span>JavaScript</span></div>
+          </div>
+          <div class="card-back">
+            <h3>Doctor Clinic Site</h3>
+            <ul>
+              <li>Appointment form with JS validation</li>
+              <li>SQLite database for bookings</li>
+              <li>Professional medical UI</li>
+            </ul>
+            <a href="https://github.com/Rajdeep5019" target="_blank" class="btn btn-sm">GitHub →</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <p class="flip-hint reveal-up">Hover cards to flip &amp; see details ↑</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="scene scene-center">
+    <div class="section-header reveal-up">
+      <div class="scene-label">// toolkit</div>
+      <h2 class="scene-title">My <span class="accent-gradient">Skills</span></h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group reveal-up" style="--d:0s">
+        <h3 class="sg-title">Languages</h3>
+        <div class="pills">
+          <span class="pill">Python</span><span class="pill">Java</span><span class="pill">C</span>
+          <span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span><span
+            class="pill">SQL</span>
+        </div>
+      </div>
+      <div class="skill-group reveal-up" style="--d:0.1s">
+        <h3 class="sg-title">Frameworks &amp; Libraries</h3>
+        <div class="pills">
+          <span class="pill">Flask</span><span class="pill">Pandas</span><span class="pill">Scikit-learn</span><span
+            class="pill">NumPy</span>
+        </div>
+      </div>
+      <div class="skill-group reveal-up" style="--d:0.2s">
+        <h3 class="sg-title">Tools &amp; Platforms</h3>
+        <div class="pills">
+          <span class="pill">Git</span><span class="pill">GitHub</span><span class="pill">VS Code</span>
+          <span class="pill">SQLite</span><span class="pill">Linux</span>
+        </div>
+      </div>
+      <div class="skill-group reveal-up" style="--d:0.3s">
+        <h3 class="sg-title">Currently Learning</h3>
+        <div class="pills">
+          <span class="pill learning">DSA</span><span class="pill learning">Java OOP</span>
+          <span class="pill learning">REST APIs</span><span class="pill learning">React</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education" class="scene scene-center">
+    <div class="section-header reveal-up">
+      <div class="scene-label">// journey</div>
+      <h2 class="scene-title">My <span class="accent-gradient">Education</span></h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item reveal-left" style="--d:0s">
+        <div class="tl-dot active"></div>
+        <div class="tl-card">
+          <div class="tl-year">2024 — Present</div>
+          <h3>B.Tech — Computer Science &amp; Technology</h3>
+          <p class="tl-school">Haldia Institute of Technology, Kolkata</p>
+          <p class="tl-desc">Studying core CS subjects including DSA, DBMS, OS, and OOP. Actively building real-world
+            projects in IoT, web dev, and ML alongside academics.</p>
+          <div class="tl-tags"><span>DSA</span><span>DBMS</span><span>OOP</span><span>OS</span><span>IoT</span></div>
+        </div>
+      </div>
+      <div class="tl-item reveal-right" style="--d:0.15s">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-year">2022 — 2024</div>
+          <h3>Senior Secondary (Class XII) — PCMB</h3>
+          <p class="tl-school">MDB DAV Public School, Bankura</p>
+          <p class="tl-desc">Completed with Physics, Chemistry, Maths &amp; Biology — where coding first became a
+            passion. Transitioned from science to tech.</p>
+          <div class="tl-tags"><span>Physics</span><span>Chemistry</span><span>Mathematics</span><span>Biology</span>
+          </div>
+        </div>
+      </div>
+      <div class="tl-item reveal-left" style="--d:0.3s">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-year">2017 — 2022</div>
+          <h3>Secondary (Class X)</h3>
+          <p class="tl-school">Sainik School Purulia</p>
+          <p class="tl-desc">Represented school in science fairs, debates, and group discussions. Active in football and
+            co-curricular activities. Developed discipline and leadership through the Sainik environment.</p>
+          <div class="tl-tags"><span>Science Fairs</span><span>Leadership</span><span>Football</span><span>NCC</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" class="scene scene-center">
+    <div class="section-header reveal-up">
+      <div class="scene-label">// beyond code</div>
+      <h2 class="scene-title">Activities &amp; <span class="accent-gradient">Achievements</span></h2>
+    </div>
+    <div class="ach-grid">
+
+      <div class="ach-card reveal-up" style="--d:0s">
+        <div class="ach-icon">🤖</div>
+        <div class="ach-body">
+          <div class="ach-tag">IoT &amp; Robotics</div>
+          <h3>Project TRINETRA — Team SYNAPSES</h3>
+          <p>Led hardware &amp; software integration for a semi-autonomous surveillance robot. Presented under IETE-ISF
+            banner.</p>
+        </div>
+      </div>
+
+      <div class="ach-card reveal-up" style="--d:0.1s">
+        <div class="ach-icon">🪖</div>
+        <div class="ach-body">
+          <div class="ach-tag">Leadership</div>
+          <h3>NCC Cadet</h3>
+          <p>Trained as an NCC cadet, building discipline, teamwork, and leadership — values that carry over directly
+            into collaborative software projects.</p>
+        </div>
+      </div>
+
+      <div class="ach-card reveal-up" style="--d:0.2s">
+        <div class="ach-icon">🔬</div>
+        <div class="ach-body">
+          <div class="ach-tag">Science &amp; Innovation</div>
+          <h3>Science Fair Representative</h3>
+          <p>Represented Sainik School Purulia in inter-school science fairs and debates, showcasing analytical thinking
+            and presentation skills.</p>
+        </div>
+      </div>
+
+      <div class="ach-card reveal-up" style="--d:0.3s">
+        <div class="ach-icon">⚽</div>
+        <div class="ach-body">
+          <div class="ach-tag">Sports</div>
+          <h3>Active Football Player</h3>
+          <p>Represented school team in football. Sports taught persistence, quick decision-making, and working under
+            pressure — skills that reflect in my development approach.</p>
+        </div>
+      </div>
+
+      <div class="ach-card reveal-up" style="--d:0.4s">
+        <div class="ach-icon">🎤</div>
+        <div class="ach-body">
+          <div class="ach-tag">Communication</div>
+          <h3>Debates &amp; Group Discussions</h3>
+          <p>Active participant in school debates and group discussions. Strong communicator who can articulate
+            technical ideas clearly to both technical and non-technical audiences.</p>
+        </div>
+      </div>
+
+      <div class="ach-card reveal-up" style="--d:0.5s">
+        <div class="ach-icon">🌐</div>
+        <div class="ach-body">
+          <div class="ach-tag">Community</div>
+          <h3>IETE-ISF Member</h3>
+          <p>Active member of the Institution of Electronics and Telecommunication Engineers — Student Forum,
+            participating in tech events and collaborative engineering projects.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="scene scene-center">
+    <div class="blob blob-3"></div>
+    <div class="contact-wrap">
+      <div class="section-header reveal-up">
+        <div class="scene-label">// get in touch</div>
+        <h2 class="scene-title">Let's <span class="accent-gradient">Connect</span></h2>
+      </div>
+      <p class="contact-sub reveal-up">Open to internships, collaborations &amp; conversations about tech.<br>I'll
+        respond within 24 hours.</p>
+
+      <div class="contact-layout reveal-up">
+
+        <!-- Left: Quick Links -->
+        <div class="contact-links">
+          <a href="https://github.com/Rajdeep5019" target="_blank" class="contact-card" id="githubCard">
+            <div class="cc-icon">🐙</div>
+            <div>
+              <div class="cc-label">GitHub</div>
+              <div class="cc-val">github.com/Rajdeep5019</div>
+            </div>
+            <span class="cc-arrow">→</span>
+          </a>
+          <a href="https://linkedin.com/in/rajdeepmandal5019" target="_blank" class="contact-card" id="linkedinCard">
+            <div class="cc-icon">💼</div>
+            <div>
+              <div class="cc-label">LinkedIn</div>
+              <div class="cc-val">linkedin.com/in/rajdeepmandal5019</div>
+            </div>
+            <span class="cc-arrow">→</span>
+          </a>
+          <button class="contact-card copy-email-btn" id="copyEmailBtn">
+            <div class="cc-icon">📧</div>
+            <div>
+              <div class="cc-label">Email — click to copy</div>
+              <div class="cc-val" id="emailDisplay">rajdeepmandal5019@gmail.com</div>
+            </div>
+            <span class="cc-arrow" id="copyArrow">⧉</span>
+          </button>
+          <a href="resume.pdf" download class="contact-card" id="resumeCard">
+            <div class="cc-icon">📄</div>
+            <div>
+              <div class="cc-label">Resume / CV</div>
+              <div class="cc-val">Download PDF</div>
+            </div>
+            <span class="cc-arrow">↓</span>
+          </a>
+        </div>
+
+        <!-- Right: Contact Form -->
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="cf-group">
+            <label class="cf-label" for="cf-name">Your Name</label>
+            <input class="cf-input" id="cf-name" name="from_name" type="text" placeholder="Priya Sharma" required />
+          </div>
+          <div class="cf-group">
+            <label class="cf-label" for="cf-email">Your Email</label>
+            <input class="cf-input" id="cf-email" name="reply_to" type="email" placeholder="priya@example.com"
+              required />
+          </div>
+          <div class="cf-group">
+            <label class="cf-label" for="cf-msg">Message</label>
+            <textarea class="cf-input cf-textarea" id="cf-msg" name="message" rows="4"
+              placeholder="Hey Rajdeep, I'd love to chat about..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary cf-submit" id="cfSubmit">
+            <span id="cfBtnText">Send Message ✦</span>
+          </button>
+          <p class="cf-note">⚡ Powered by EmailJS — set up your keys in script.js</p>
+        </form>
+
+      </div>
+    </div>
+    <footer class="site-footer">
+      <p>Crafted with ❤️ by <span class="accent-gradient">Rajdeep Mandal</span> · 2026</p>
+    </footer>
+  </section>
+
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
